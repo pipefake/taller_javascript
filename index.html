@@ -5,12 +5,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <script src="js/desafio1.js"></script>
+    <script src="js/desafio2.js"></script>
+    <script src="js/desafio3.js"></script>
+    <script src="js/desafio4.js"></script>
+    <script src="js/desafio5.js"></script>
+    <script src="js/desafio6.js"></script>
+    <script src="js/desafio7.js"></script>
     <title>Document</title>
 </head>
 
 <body>
-
+    <div>
+        <label for="Htrabajadas">Horas Trabajadas</label>
+        <input type="text" id="Htrabajadas" name="Horas trabajadas" />
+        <label for="Htrabajadas">Valor por hora</label>
+        <input type="text" id="Valorhora" name="Valor por hora" />
+        <button onclick="mostrar_valorpaga();">imprimir</button>
+        <div id="valorpaga">Calcula el valor a pagar</div>
+    </div>
+    <div>
+        <label for="peso">Peso</label>
+        <input type="text" id="peso" name="peso" placeholder=" en KG " />
+        <label for="estatura">estatura</label>
+        <input type="text" id="estatura" name="estatura" placeholder=" en metros " />
+        <button onclick="mostrar_imc();">imprimir</button>
+        <div id="imc_show">Calcula el indice de masa corporal</div>
+    </div>
 </body>
 
 </html>
