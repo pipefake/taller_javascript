@@ -5,7 +5,7 @@ function muestra() {
         suma += arreglo[i] * 1;
 
     }
-    var media = suma / arreglo.length;
+    var media = (suma / arreglo.length).toFixed(2);
     document.getElementById("media_show").innerHTML = "La media es: " + media;
 
     return media;
