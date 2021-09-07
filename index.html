@@ -63,8 +63,11 @@
     <div>
         <label for="muestra">Ingrese una muestra: </label>
         <input type="text" id="muestra" name="muestra" placeholder=" " />
-        <button onclick="muestra();">Analizar</button>
-        <div id="muestra_show">Tu palabra :</div>
+
+        <button onclick="muestra();">Media</button>
+        <button onclick="desviacion();">Desviacion Estandar</button>
+        <div id="media_show">La media es:</div>
+        <div id="desviacion_show">La desviacion estandar es: </div>
     </div>
     <div>
         <label for="fruta">Ingrese una fruta: </label>
@@ -72,7 +75,8 @@
         <label for="kilos">Ingrese el numero de kilos: </label>
         <input type="text" id="kilos" name="kilos" placeholder=" " />
         <button onclick="calcularpreciofruta();">Calcular</button>
-        <div id="muestra_show">Tu palabra :</div>
+
+        <div id="preciofruta_show">Tu palabra :</div>
 
     </div>
 </body>

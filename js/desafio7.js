@@ -1,12 +1,33 @@
-function calcularpreciofruta() {
-    var arreglo = new Array();
-    arreglo[0] = document.getElementById("var1").value;
-    arreglo[1] = document.getElementById("var2").value;
-    arreglo[2] = document.getElementById("var3").value;
-    arreglo[3] = document.getElementById("var4").value;
-    var resultado = 0;
-    for (i = 0; i < arreglo.length; i++) {
-        resultado += arreglo[i] * 1;
+let frutas = [{
+        nombre: "banano",
+        preciokilo: "3000",
+    },
+    {
+        nombre: "mora",
+        preciokilo: "2000",
+    },
+    {
+        nombre: "sandia",
+        preciokilo: "1000",
     }
-    document.getElementById("suma_show").innerHTML = "El total de la suma es: " + resultado;
+]
+
+function calcularpreciofruta() {
+    var auxnombre = document.getElementById("fruta").value;
+    var auxkilos = document.getElementById("kilos").value;
+    var total = 0;
+    for (i = 0; i < frutas.length; i++) {
+
+        if (frutas[i].nombre === auxnombre) {
+            total = frutas[i].preciokilo * auxkilos;
+            document.getElementById("preciofruta_show").innerHTML = total;
+            break;
+        } else {
+            document.getElementById("preciofruta_show").innerHTML = "Esta fruta no existe en el diccionario";
+        }
+
+    }
+
+
+
 }
